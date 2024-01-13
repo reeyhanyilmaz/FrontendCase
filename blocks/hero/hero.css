@@ -44,7 +44,7 @@ main .hero-container {
   max-width: 800px;
 }
 
-.hero-container .left-div p {
+.hero-container .left-div h4 {
   color: #042164;
   font-size: 21px;
   font-weight: bold;
@@ -74,4 +74,30 @@ main .hero-container {
   background-color: white;
   color: #000;
   padding: 10px 85px;
+}
+
+/* count down */
+#countdown {
+  display: flex;
+  flex-direction: row;
+}
+
+.countdown-content {
+  background-color: #5175c8;
+  width: 85px;
+  height: 94px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  padding: 8px;
+}
+
+.countdown-content .countdown-number {
+  font-size: 25px
+}
+
+.countdown-content p {
+  font-size: 19px;
 }
