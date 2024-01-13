@@ -4,12 +4,18 @@ import { loadFragment } from "../fragment/fragment.js";
 // media query match that indicates mobile/tablet width
 const isDesktop = window.matchMedia("(min-width: 900px)");
 
-function toggleMenu(nav, forceExpanded = null) {
-  //aria-expanded="true open hamburger
+function toggleAllNavSections(sections, expanded = false) {
+  sections.querySelectorAll(".nav-sections .default-content-wrapper > ul > li").forEach((section) => {
+    section.setAttribute("aria-expanded", expanded);
+  });
+}
+
+function toggleMenu(nav, navSections, forceExpanded = null) {
   const expanded = forceExpanded !== null ? !forceExpanded : nav.getAttribute("aria-expanded") === "true";
   const button = nav.querySelector(".nav-hamburger button");
   document.body.style.overflowY = expanded || isDesktop.matches ? "" : "hidden";
   nav.setAttribute("aria-expanded", expanded ? "false" : "true");
+  toggleAllNavSections(navSections, expanded || isDesktop.matches ? "false" : "true");
   button.setAttribute("aria-label", expanded ? "Open navigation" : "Close navigation");
 }
 
@@ -23,7 +29,6 @@ export default async function decorate(block) {
   const nav = document.createElement("nav");
   nav.id = "nav";
   while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
-  console.log("fragment :>> ", fragment);
 
   const classes = ["brand", "sections"];
   classes.forEach((c, i) => {
