@@ -12,9 +12,11 @@ export default function decorate(block) {
   const heroContenDiv = rightPartDiv.parentElement;
   heroContenDiv.classList.add("hero-content-div");
 
-  const targetDate = new Date("05/05/2024 14:00");
-
   const h3 = document.querySelector(".hero-container .left-div h3");
+  const splitDate = h3.textContent.split(",")[1].trim(); // 5 May 2024 verir
+  const targetDate = new Date(splitDate);
+  console.log("targetDate :>> ", targetDate);
+
   const countdownObject = [
     { id: "days", text: "Days" },
     { id: "hours", text: "Hours" },
