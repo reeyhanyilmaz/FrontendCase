@@ -1,0 +1,104 @@
+.section.upcomingevents-container {
+    background-color: #F7F8FB;
+    display: flex;
+    flex-direction: column;
+}
+
+.section.upcomingevents-container .default-content-wrapper p {
+    color: #042164;
+    font-size: 40px;
+}
+
+.upcomingevents-wrapper {
+    overflow: hidden;
+    padding-left: 15px;
+}
+
+
+.upcomingevents.block {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    cursor: grab;
+    user-select: none;
+    /* kullanıcı yazıyı seçmesin */
+    gap: 44px;
+    transform: scale(0.98);
+}
+
+.upcomingevents.block.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    transform: scale(1);
+}
+
+.upcomingevents div.upcomingpart-item-div {
+    width: 300px;
+    border-radius: 10px;
+    background-color: white;
+    padding-bottom: 10px;
+    height: 334px;
+}
+
+.upcomingevents::-webkit-scrollbar {
+    display: none;
+}
+
+.upcomingevents div.upcomingpart-item-div h4 {
+    font-size: 20px;
+    padding: 25px 7px 20px 7px;
+    background-color: #232B76;
+    color: white;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.upcomingevents div.upcomingpart-item-div h5 {
+    font-size: 18px;
+    text-align: center;
+    height: 95px;
+}
+
+.upcomingevents div.upcomingpart-item-div p {
+    font-size: 18px;
+    color: #009FE3;
+    text-align: center;
+}
+
+/* buttons */
+.register-addtocal-parent {
+    display: flex;
+    gap: 5px;
+    padding: 0 10px;
+}
+
+.register-button,
+.addtocal-button {
+    color: white;
+    font-size: 13px;
+    border-radius: 29px;
+}
+
+.register-button {
+    background-color: #009FE3 !important;
+    box-shadow: 0px 0px 20px #009FE345;
+    width: 107px;
+    padding: 11px 3px;
+}
+
+.addtocal-button {
+    background: #042164 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 20px #1490DF60;
+    width: 197px;
+    padding: 11px 3px;
+}
+
+.other-button {
+    background-color: white !important;
+    box-shadow: 0px 0px 20px #1490DF60;
+    color: #1490DF !important;
+    border: 1px solid #1490DF;
+}
