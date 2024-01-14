@@ -1,0 +1,5 @@
+.speakers-button-div {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
