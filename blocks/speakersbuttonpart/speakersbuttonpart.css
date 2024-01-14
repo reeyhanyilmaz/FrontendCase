@@ -3,3 +3,11 @@
     justify-content: center;
     gap: 35px;
 }
+
+@media (width <=900px) {
+    .speakers-button-div {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+}

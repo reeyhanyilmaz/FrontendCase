@@ -17,7 +17,6 @@ main .hero-container {
   margin-left: auto;
   margin-right: auto;
   color: #042164;
-  /* font-size: 21px; */
 }
 
 .hero picture {
@@ -100,4 +99,26 @@ main .hero-container {
 
 .countdown-content p {
   font-size: 19px;
+}
+
+@media (width <=900px) {
+  .section.hero-container h1 {
+    font-size: 28px;
+  }
+
+  .section.hero-container h2 {
+    font-size: 25px;
+  }
+
+  .section.hero-container .hero-content-div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+  }
+
+  .section.hero-container .countdown-content {
+    width: 65px;
+    margin-right: 10px;
+  }
+
 }
