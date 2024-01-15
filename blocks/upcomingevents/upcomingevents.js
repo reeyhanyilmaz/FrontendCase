@@ -2,7 +2,6 @@ export default function decorate(block) {
   // div
   const upcomingPartDoubleDiv = document.querySelectorAll(".upcomingevents.block h4");
   upcomingPartDoubleDiv.forEach((item) => {
-    console.log("upcomingPartDoubleDiv :>> ", item.closest("div"));
     const parentDiv = item.closest("div");
     parentDiv.classList.add("upcomingpart-item-div");
   });
