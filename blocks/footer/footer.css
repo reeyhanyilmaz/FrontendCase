@@ -1,12 +1,14 @@
 footer {
-  padding: 2rem;
+  display: flex;
   height: 123px;
+  border-top: 1px solid #bfbfbf;
 }
 
 footer .footer {
   max-width: 1200px;
   margin: auto;
   display: flex;
+  align-items: center;
   flex-direction: row;
   color: #333333;
   font-size: 16px;
