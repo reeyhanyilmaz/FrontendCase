@@ -1,3 +1,7 @@
+.upcomingevents-wrapper {
+    max-width: 1400px !important;
+}
+
 .section.upcomingevents-container {
     background-color: #F7F8FB;
     display: flex;
@@ -12,6 +16,7 @@
 .upcomingevents-wrapper {
     overflow: hidden;
     padding-left: 15px;
+    position: relative;
 }
 
 
@@ -19,17 +24,25 @@
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
     cursor: grab;
     user-select: none;
     /* kullanıcı yazıyı seçmesin */
     gap: 44px;
     transform: scale(0.98);
+    padding-left: 130px !important;
+}
+
+.upcomingevents-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 8%;
+    height: 100%;
+    background: linear-gradient(90deg, #F5F5F500 0%, #F5F5F5 100%);
 }
 
 .upcomingevents.block.active {
-    cursor: grabbing;
     cursor: -webkit-grabbing;
     transform: scale(1);
 }
@@ -39,6 +52,7 @@
     border-radius: 10px;
     background-color: white;
     padding-bottom: 10px;
+    padding: 0 10px;
     height: 334px;
 }
 
@@ -49,6 +63,8 @@
 .upcomingevents div.upcomingpart-item-div h4 {
     font-size: 20px;
     padding: 25px 7px 20px 7px;
+    margin-right: -10px;
+    margin-left: -10px;
     background-color: #232B76;
     color: white;
     text-align: center;
@@ -57,9 +73,9 @@
 }
 
 .upcomingevents div.upcomingpart-item-div h5 {
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
-    height: 95px;
+    height: 70px;
 }
 
 .upcomingevents div.upcomingpart-item-div p {
@@ -101,4 +117,15 @@
     box-shadow: 0px 0px 20px #1490DF60;
     color: #1490DF !important;
     border: 1px solid #1490DF;
+}
+
+@media (width <=900px) {
+    .section.upcomingevents-container .default-content-wrapper p {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .upcomingevents-wrapper {
+        padding-left: 0 !important;
+    }
 }
