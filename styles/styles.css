@@ -167,4 +167,8 @@ main .section.text .default-content-wrapper h6 {
   .hero-container .left-div h2 {
     text-align: center;
   }
+
+  #speakers {
+    margin-top: 100px;
+  }
 }
