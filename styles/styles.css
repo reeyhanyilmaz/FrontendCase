@@ -6,17 +6,17 @@
   --text-color: black;
 
   /* fonts */
-  --body-font-family: FS Albert;
+  --body-font-family: 'FS Albert', sans-serif;
 
   /* nav height */
   --nav-height: 100px;
 }
 
 @font-face {
-  font-family: FS Albert;
-  size-adjust: 100.06%;
-  ascent-override: 95%;
-  src: local('Arial');
+  font-family: 'FS Albert';
+  src: url('fonts/FSAlbert-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal
 }
 
 body {
