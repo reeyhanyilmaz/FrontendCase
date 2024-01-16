@@ -6,7 +6,7 @@
   --text-color: black;
 
   /* fonts */
-  --body-font-family: 'FS Albert', sans-serif;
+  --body-font-family: 'FS Albert';
 
   /* nav height */
   --nav-height: 100px;
@@ -14,7 +14,7 @@
 
 @font-face {
   font-family: 'FS Albert';
-  src: url('fonts/FSAlbert-Regular.otf') format('opentype');
+  src: url('/fonts/FSAlbert-Regular.otf');
   font-weight: normal;
   font-style: normal
 }
@@ -92,6 +92,10 @@ main .section {
   .section>div {
     max-width: 1200px;
     margin: auto;
+  }
+
+  #speakers {
+    margin-top: -200px;
   }
 }
 

@@ -128,4 +128,8 @@
     .upcomingevents-wrapper {
         padding-left: 0 !important;
     }
+
+    .upcomingevents.block {
+        padding-left: 50px !important;
+    }
 }

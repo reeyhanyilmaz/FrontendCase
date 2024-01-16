@@ -12,7 +12,7 @@ export default function decorate(block) {
   const heroContenDiv = rightPartDiv.parentElement;
   heroContenDiv.classList.add("hero-content-div");
 
-  const h3 = document.querySelector(".hero-container .left-div h3");
+  const h3 = document.querySelector(".hero-container .left-div h5");
   const splitDate = h3.textContent.split(",")[1].trim(); // 5 May 2024 verir
   const targetDate = new Date(splitDate);
 
