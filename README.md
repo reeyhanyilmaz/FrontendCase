@@ -1,26 +1,11 @@
-# Your Project's Title...
-Your project's description...
+# Vistream
+Vistream web site with `Adobe Experience Manager`
 
 ## Environments
-- Preview: https://main--vidizayncase--reeyhanyilmaz.hlx.page/
-- Live: https://main--vidizayncase--reeyhanyilmaz.hlx.live/
-
-## Installation
-
-```sh
-npm i
-```
-
-## Linting
-
-```sh
-npm run lint
-```
+Preview: https://main--vidizayncase--reeyhanyilmaz.hlx.page/
 
 ## Local development
 
-1. Create a new repository based on the `aem-boilerplate` template and add a mountpoint in the `fstab.yaml`
-1. Add the [AEM Code Sync GitHub App](https://github.com/apps/aem-code-sync) to the repository
-1. Install the [AEM CLI](https://github.com/adobe/aem-cli): `npm install -g @adobe/aem-cli`
+1. I have created a new repository using the `aem-boilerplate` template and  connected the docx file I created in drive to my project with `fstab.yaml` file.
+2. Install the [AEM CLI](https://github.com/adobe/aem-cli): `npm install -g @adobe/aem-cli`
 1. Start AEM Proxy: `aem up` (opens your browser at `http://localhost:3000`)
-1. Open the `{repo}` directory in your favorite IDE and start coding :)
